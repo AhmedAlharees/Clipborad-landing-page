@@ -25,7 +25,7 @@
   background-image: url("./images/bg-header-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 130px .5rem;
+  padding: 130px 0.5rem;
 }
 
 .header-logo {
@@ -110,8 +110,8 @@ p {
   align-items: center;
 }
 
-:is(.about-image img, .second-image img){
-    width: 100%;
+:is(.about-image img, .second-image img) {
+  width: 100%;
 }
 .list {
   display: flex;
@@ -126,6 +126,11 @@ p {
 
 .second-section {
   text-align: center;
+}
+
+.second-image {
+  margin: 0 auto;
+  max-width: 900px;
 }
 
 .second-property p {
@@ -205,20 +210,20 @@ footer .links {
 }
 
 @media (max-width: 650px) {
-    .list{
-        text-align: center;
-    }
-    footer{
-        margin: 1rem auto;
-        text-align: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    footer .links{
-        margin: 2rem 0;
-        grid-template-columns: repeat(1, minmax(180px, 180px));
-    }
-    footer .links a + a{
-        margin-top: 15px;
-    }
+  .list {
+    text-align: center;
+  }
+  footer {
+    margin: 1rem auto;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .links {
+    margin: 2rem 0;
+    grid-template-columns: repeat(1, minmax(180px, 180px));
+  }
+  footer .links a + a {
+    margin-top: 15px;
+  }
 }
